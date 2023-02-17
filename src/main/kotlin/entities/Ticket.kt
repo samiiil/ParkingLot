@@ -1,11 +1,11 @@
 package entities
 
-import java.util.*
+import java.time.LocalDateTime
 
-data class Ticket (
+data class Ticket(
     private val ticketNumber: Int,
     private val spotNumber: Int,
-    private val entryDateTime: Date,
+    private val entryDateTime: LocalDateTime,
     private val vehicle: Vehicle
     )
 {
