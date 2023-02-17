@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8842282f-aed2-4a86-9bd9-31a3bd626e19" name="Changes" comment="" />
+    <list default="true" id="8842282f-aed2-4a86-9bd9-31a3bd626e19" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ParkingLot.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ParkingLot.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/constants/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/constants/Constants.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/entities/ParkingReceipt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/entities/ParkingReceipt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/entities/Ticket.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/entities/Ticket.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/services/ParkingServices.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/services/ParkingServices.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ReceiptTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ReceiptTest.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

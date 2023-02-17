@@ -1,21 +1,21 @@
 package entities
 
 import java.time.LocalDateTime
+class Ticket(
+   private var parkingSpotNumber: Int,
+    private var ticketNumber: Int,
+    private var entryTime: LocalDateTime? = LocalDateTime.now()
+){
+    fun getEntryTime(): LocalDateTime? {
+        return entryTime
+    }
 
-data class Ticket(
-    private val ticketNumber: Int,
-    private val spotNumber: Int,
-    private val entryDateTime: LocalDateTime,
-    private val vehicle: Vehicle
-    )
-{
-    override fun toString(): String {
-        return """
-            Parking Ticket:
-                Ticket Number: $ticketNumber
-                Spot Number: $vehicle - $spotNumber
-                Entry Date-time: $entryDateTime
-        """.trimIndent()
+    fun getParkingSpotNumber(): Int{
+        return parkingSpotNumber
+    }
+
+    fun getTicketNumber(): Int{
+        return ticketNumber
     }
 
 
