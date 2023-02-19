@@ -1,5 +1,5 @@
 package entities
 
-enum class Vehicle{
+enum class Vehicle {
     CAR
 }

@@ -18,7 +18,5 @@ class ReceiptTest {
         assertEquals(expectedCharge, actualCharge)
 
 
-
-
     }
 }

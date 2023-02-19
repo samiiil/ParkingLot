@@ -1,4 +1,5 @@
 package services
+
 import entities.Ticket
 import entities.Vehicle
 import exceptions.ParkingLotFullException
@@ -7,8 +8,9 @@ import entities.ParkingReceipt
 import models.ParkingLot
 import models.ParkingSpot
 
-var ticketNumber =1
-var receiptNumber =1
+var ticketNumber = 1
+var receiptNumber = 1
+
 class ParkingServices {
 
     private val parkingLot: ParkingLot = ParkingLot()
@@ -20,6 +22,7 @@ class ParkingServices {
         parkingLot.park(vehicle, freeSpot.getspotNumber())
         return ticket
     }
+
     fun unpark(ticket: Ticket): ParkingReceipt {
         parkingLot.freeSpot(ticket.getParkingSpotNumber())
         return ParkingReceipt(ticket, receiptNumber++).generateReceipt()

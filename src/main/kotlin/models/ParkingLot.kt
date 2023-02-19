@@ -4,6 +4,7 @@ import constants.MAX_CAPACITY
 import exceptions.InvalidSpotExceptions
 import exceptions.SpotIsOccupiedException
 import entities.Vehicle
+
 class ParkingLot {
 
     private val spots: MutableList<ParkingSpot?> = MutableList(MAX_CAPACITY + 1) { null }

@@ -1,4 +1,3 @@
-import exceptions.InvalidSpotExceptions
 import exceptions.SpotIsOccupiedException
 import models.ParkingLot
 import entities.Ticket
@@ -39,5 +38,9 @@ class ParkingServiceTest {
         assertThrows(SpotIsOccupiedException::class.java) {
             parkingLot.park(Vehicle.CAR, 1)
         }
+
+
     }
+
+
 }
