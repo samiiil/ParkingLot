@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8842282f-aed2-4a86-9bd9-31a3bd626e19" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ParkingLot.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ParkingLot.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/constants/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/constants/Constants.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/entities/ParkingReceipt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/entities/ParkingReceipt.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/services/ParkingServices.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/services/ParkingServices.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ReceiptTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ReceiptTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/ParkingServiceTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +43,36 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="ReceiptTest.it should calculate charge" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ReceiptTest.it should calculate charge&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.ReceiptTest.it should calculate charge" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,5 +83,16 @@
       <updated>1676567648625</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
