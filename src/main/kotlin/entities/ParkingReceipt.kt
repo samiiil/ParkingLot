@@ -11,7 +11,7 @@ class ParkingReceipt (
      val exitTime: LocalDateTime? =LocalDateTime.now()
     ) {
 
-    private var entryTime: LocalDateTime? = null
+    private var entryTime= ticket.getEntryTime()
     private var parkingfee: Long = 0
 
     fun getReceiptnumber(): Int {
