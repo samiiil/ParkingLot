@@ -6,6 +6,7 @@ import entities.Vehicle
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import services.ParkingServices
+import entities.ParkingReceipt
 
 
 class ParkingServiceTest {
@@ -17,4 +18,18 @@ class ParkingServiceTest {
         assertEquals(1, ticket.getParkingSpotNumber())
 
     }
+
+    @Test
+    fun `the vehicle should unpark`() {
+        val parkingService = ParkingServices()
+        val ticket = parkingService.park(Vehicle.CAR)
+
+        val ParkingReceipt = parkingService.unpark(ticket)
+
+        assertEquals(1, ParkingReceipt.getReceiptnumber())
+
+
+    }
+
+
 }
