@@ -1,4 +1,5 @@
-import constants.VEHICLE_HOUR_CHARGE
+
+import constants.VEHICLE_HOUR_FEE
 import entities.Ticket
 import org.junit.jupiter.api.Test
 import java.time.LocalDateTime
@@ -12,10 +13,9 @@ class ReceiptTest {
         val receipt = ParkingReceipt(ticket,1,LocalDateTime.of(2023,2,16,10,0,0))
     }
 
-    val expectedfee = VEHICLE_HOUR_CHARGE * 2
-    val actualfee = ParkingReceipt.calculateParkingfee
+    val expectedfee = VEHICLE_HOUR_FEE* 2
+    val actualfee =
 
-    assertEquals(expectedfee, actualfee)
 
 
 

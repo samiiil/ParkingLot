@@ -1,17 +1,17 @@
 package entities
 
-import java.util.*
-import constants.VEHICLE_HOUR_CHARGE
+
+import constants.VEHICLE_HOUR_FEE
 import java.time.Duration
 import java.time.LocalDateTime
-import entities.Ticket
+
 class ParkingReceipt (
    ticket: Ticket,
      val receiptNumber: Int,
      val exitTime: LocalDateTime? =LocalDateTime.now()
     ) {
 
-    private var entryTime: LocalDateTime? ticket.getEntryTime()
+    private var entryTime: LocalDateTime? = null
     private var parkingfee: Long = 0
 
     fun getReceiptnumber(): Int {
@@ -25,6 +25,6 @@ class ParkingReceipt (
 
     fun calculateParkingfee(): Long{
         val duration = Duration.between(entryTime,exitTime).toHours()
-        return duration* VEHICLE_HOUR_CHARGE
+        return duration* VEHICLE_HOUR_FEE
     }
 }
