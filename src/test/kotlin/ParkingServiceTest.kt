@@ -31,5 +31,13 @@ class ParkingServiceTest {
 
     }
 
+    @Test
+    fun `throw exception if spot is occupied`() {
+        val parkingLot = ParkingLot()
+        parkingLot.park(Vehicle.CAR, 1)
 
+        assertThrows(SpotIsOccupiedException::class.java) {
+            parkingLot.park(Vehicle.CAR, 1)
+        }
+    }
 }
