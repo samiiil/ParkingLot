@@ -14,7 +14,8 @@ class ParkingLot {
         if (spots[spotNumber] == null)
             spots[spotNumber] = ParkingSpot(spotNumber)
         return spots[spotNumber]
-}
+    }
+
     fun park(vehicle: Vehicle, spotNumber: Int): ParkingSpot {
         val spot = getSpot(spotNumber)!!
         if (spot.isFree()) {
@@ -25,3 +26,12 @@ class ParkingLot {
 
     }
 
+    fun freeSpot(spotNumber: Int): ParkingSpot {
+        val spot = getSpot(spotNumber)!!
+        if (spot.getparkedVehicle() == null)
+            throw InvalidSpotExceptions()
+        spot.unAssignedVehicle()
+        return spot
+    }
+
+}
